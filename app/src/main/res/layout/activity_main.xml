@@ -28,7 +28,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:text="Capture Image"
-        android:onclick="captureImage"/>
+        android:onClick="captureImage"/>
 
 
 
