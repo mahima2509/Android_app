@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -10,25 +10,26 @@
 
 
 
-    <TextView
+    <ImageView
 
-        android:id="@+id/textview"
-        android:text="CAMERA APPLICATION"
-        android:textSize="25dp"
+        android:id="@+id/image_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button_capture"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"/>
 
 
 
     <Button
-        android:id="@+id/switchbtn"
-        android:onClick="SwitchBtn"
-        android:text="Switch"
-        android:layout_marginTop="5dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:id="@+id/button_capture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Capture Image"
+        android:onclick="captureImage"/>
 
 
 
-</LinearLayout>
+</RelativeLayout >
